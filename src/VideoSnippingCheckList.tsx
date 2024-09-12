@@ -3,6 +3,7 @@ const VideoSnippingCheckList = ({
   hasWebmFile,
   hasTrimFromStart,
   hasTrimFromEnd,
+  hasWebmBeenSentToServer,
 }) => {
   return (
     <div>
@@ -16,6 +17,7 @@ const VideoSnippingCheckList = ({
         <li>
           Trim from end - unnecessary bloat {hasTrimFromEnd ? '✅' : '❌'}
         </li>
+        <li>Send webm to server {hasWebmBeenSentToServer ? '✅' : '❌'}</li>
       </ol>
     </div>
   );

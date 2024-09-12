@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import VideoPlayer from './VideoPlayer';
 import axios from 'axios';
@@ -105,8 +105,6 @@ function App() {
   const handleVideoFileChange = (event) => {
     const selectedFile = event.target.files[0];
     if (selectedFile && selectedFile.type === 'video/webm') {
-      console.log('## ', { selectedFile });
-
       setWebmFileState(selectedFile);
       const url = URL.createObjectURL(selectedFile);
       setWebmFileUrlState(url);
@@ -160,6 +158,9 @@ function App() {
           onChange={handleInputFileNameChange}
           placeholder='Enter input file name'
         />
+      </div>
+      <div style={{ display: 'inline-flex', gap: '10px' }}>
+        <input type='file' accept='*/*' onChange={handleFileChange} />
       </div>
       <div style={{ display: 'inline-flex', gap: '10px', margin: '10px' }}>
         <p>Webm ting</p>
