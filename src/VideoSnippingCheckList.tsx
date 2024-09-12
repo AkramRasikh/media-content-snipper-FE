@@ -4,11 +4,15 @@ const VideoSnippingCheckList = ({
   hasTrimFromStart,
   hasTrimFromEnd,
   hasWebmBeenSentToServer,
+  hasContentBeenNamed,
 }) => {
   return (
     <div>
       <ol>
         <li>Upload .webm file {hasTxtFile ? '✅' : '❌'}</li>
+        <li>
+          Upload has content been named {hasContentBeenNamed ? '✅' : '❌'}
+        </li>
         <li>Upload .txt file {hasWebmFile ? '✅' : '❌'}</li>
         <li>
           Trim from start - align video with subs{' '}

@@ -9,8 +9,7 @@ import { secondsToHms } from './utils/secondsToHMSS';
 function App() {
   const [decrepenacyState, setDecrepenacyState] = useState(null);
   const [lastAudioTimeStampState, setLastAudioTimeStampState] = useState();
-  const [outputFileNameState, setOutputFileNameState] = useState('OUTPUT-FILE');
-  const [inputFileNameState, setInputFileNameState] = useState('INPUT-FILE');
+  const [contentName, setContentName] = useState('');
   const [currentTimeState, setCurrentTimeState] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [fileURL, setFileURL] = useState('');
@@ -80,8 +79,7 @@ function App() {
         'http://localhost:3000/*',
         // 'http://localhost:3000/video-to-audio',
         {
-          inputFileName: inputFileNameState,
-          outputFileName: outputFileNameState,
+          contentName,
           trimStart: decrepenacyState,
           trimEnd: lastAudioTimeStampState,
         },
@@ -96,10 +94,7 @@ function App() {
   };
 
   const handleInputChange = (e) => {
-    setOutputFileNameState(e.target.value);
-  };
-  const handleInputFileNameChange = (e) => {
-    setInputFileNameState(e.target.value);
+    setContentName(e.target.value);
   };
 
   const handleVideoFileChange = (event) => {
@@ -128,7 +123,9 @@ function App() {
     return 'TRIM-END-HERE';
   };
 
-  const commandToCopy = `ffmpeg -i ${inputFileNameState}.webm -ss ${getTrimFromStart()} -to ${getTrimFromEnd()} -vn -ar 44100 -ab 96k -ac 2 ${outputFileNameState}.mp3`;
+  const contentNamePlaceholder = contentName || 'CONTENT-NAME';
+
+  const commandToCopy = `ffmpeg -i ${contentNamePlaceholder}.webm -ss ${getTrimFromStart()} -to ${getTrimFromEnd()} -vn -ar 44100 -ab 96k -ac 2 ${contentNamePlaceholder}.mp3`;
   return (
     <div
       className='App'
@@ -142,35 +139,64 @@ function App() {
         hasWebmFile={webmFileUrlState}
         hasTrimFromStart={decrepenacyState}
         hasTrimFromEnd={lastAudioTimeStampState}
+        hasContentBeenNamed={contentName}
       />
       <div>
         <input
           type='text'
           id='fileName'
-          value={outputFileNameState}
+          value={contentName}
           onChange={handleInputChange}
-          placeholder='Enter file name'
-        />
-        <input
-          type='text'
-          id='inputFileName'
-          value={inputFileNameState}
-          onChange={handleInputFileNameChange}
-          placeholder='Enter input file name'
+          placeholder='Enter content name (e.g diners-01-02-03) (first season, second episode, third scene)'
+          style={{
+            width: '75%',
+          }}
         />
       </div>
-      <div style={{ display: 'inline-flex', gap: '10px' }}>
-        <input type='file' accept='*/*' onChange={handleFileChange} />
+      <div
+        style={{
+          display: 'inline-flex',
+          gap: '10px',
+          padding: '10px',
+        }}
+      >
+        <div
+          style={{
+            display: 'inline-flex',
+            gap: '10px',
+            border: '1px solid grey',
+            padding: '5px',
+          }}
+        >
+          <label htmlFor='txtUpload'>.txt file upload</label>
+          <input
+            id='txtUpload'
+            type='file'
+            accept='*/*'
+            onChange={handleFileChange}
+            placeholder='Siu'
+          />
+        </div>
+        <div
+          style={{
+            display: 'inline-flex',
+            gap: '10px',
+            border: '1px solid grey',
+            padding: '5px',
+          }}
+        >
+          <label htmlFor='webmUpload'>Webm upload</label>
+          <input
+            id='webmUpload'
+            type='file'
+            accept='.webm'
+            onChange={handleVideoFileChange}
+          />
+        </div>
       </div>
-      <div style={{ display: 'inline-flex', gap: '10px', margin: '10px' }}>
-        <p>Webm ting</p>
-        <input type='file' accept='.webm' onChange={handleVideoFileChange} />
+      <div>
+        <p style={{ display: 'inline-flex', gap: '10px' }}>{commandToCopy}</p>
       </div>
-      <p style={{ display: 'inline-flex', gap: '10px' }}>
-        {commandToCopy}
-        <span>Start audio trim{decrepenacyState ? '✅' : '❌'}</span>
-        <span>End audio trim: {lastAudioTimeStampState ? '✅' : '❌'}</span>
-      </p>
       {webmFileUrlState ? (
         <VideoPlayer
           decrepenacyState={decrepenacyState}
@@ -189,10 +215,7 @@ function App() {
       <button
         onClick={handleConvert}
         disabled={Boolean(
-          !inputFileNameState ||
-            !outputFileNameState ||
-            !decrepenacyState ||
-            !lastAudioTimeStampState,
+          !contentName || !decrepenacyState || !lastAudioTimeStampState,
         )}
       >
         Trigger conversion
