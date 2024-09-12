@@ -5,6 +5,8 @@ import axios from 'axios';
 import { txtToJSON } from './utils/txt-to-json';
 import VideoSnippingCheckList from './VideoSnippingCheckList';
 import { secondsToHms } from './utils/secondsToHMSS';
+import AudioPlayer from './AudioPlayer';
+import UploadingComponents from './UploadingComponents';
 
 function App() {
   const [decrepenacyState, setDecrepenacyState] = useState(null);
@@ -148,7 +150,7 @@ function App() {
     >
       {isLoading ? (
         <div
-          style={{ position: 'absolute', top: '30px', display: 'inline-flex' }}
+          style={{ position: 'absolute', top: '50%', display: 'inline-flex' }}
         >
           <p
             style={{
@@ -171,63 +173,21 @@ function App() {
         hasContentBeenNamed={contentName}
         hasWebmBeenSentToServer={hasVideoBeenUploaded}
       />
-      <div>
-        <input
-          type='text'
-          id='fileName'
-          value={contentName}
-          onChange={handleInputChange}
-          placeholder='Enter content name (e.g diners-01-02-03) (first season, second episode, third scene)'
-          style={{
-            width: '75%',
-          }}
+      {fileURL ? (
+        <AudioPlayer
+          url={'http://localhost:4000' + fileURL}
+          subtitles={transcriptDataState}
+          decrepenacyState={decrepenacyState}
         />
-      </div>
-      <div
-        style={{
-          display: 'inline-flex',
-          gap: '10px',
-          padding: '10px',
-        }}
-      >
-        <div
-          style={{
-            display: 'inline-flex',
-            gap: '10px',
-            border: '1px solid grey',
-            padding: '5px',
-          }}
-        >
-          <label htmlFor='txtUpload'>.txt file upload</label>
-          <input
-            id='txtUpload'
-            type='file'
-            accept='*/*'
-            onChange={handleFileChange}
-            placeholder='Siu'
-          />
-        </div>
-        <div
-          style={{
-            display: 'inline-flex',
-            gap: '10px',
-            border: '1px solid grey',
-            padding: '5px',
-          }}
-        >
-          <label htmlFor='webmUpload'>Webm upload</label>
-          <input
-            id='webmUpload'
-            type='file'
-            accept='.webm'
-            onChange={handleVideoFileChange}
-            disabled={!contentName}
-          />
-        </div>
-      </div>
+      ) : null}
+      <UploadingComponents
+        handleInputChange={handleInputChange}
+        handleFileChange={handleFileChange}
+        handleVideoFileChange={handleVideoFileChange}
+        contentName={contentName}
+      />
       <div>
-        <button onClick={handleWebMToServer}>
-          {/* <button disabled={hasVideoBeenUploaded} onClick={handleWebMToServer}> */}
+        <button disabled={hasVideoBeenUploaded} onClick={handleWebMToServer}>
           webm to server
         </button>
       </div>
@@ -244,13 +204,15 @@ function App() {
           setCurrentTimeState={setCurrentTimeState}
           transcriptDataState={transcriptDataState}
           webmFileUrlState={webmFileUrlState}
+          timeIsAligned={fileURL}
         />
       ) : null}
 
       <button
         onClick={handleConvertWebmToMP3}
         disabled={Boolean(
-          !contentName ||
+          fileURL ||
+            !contentName ||
             !decrepenacyState ||
             !lastAudioTimeStampState ||
             !hasVideoBeenUploaded,

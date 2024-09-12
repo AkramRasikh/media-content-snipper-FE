@@ -12,6 +12,7 @@ const VideoPlayer = ({
   setCurrentTimeState,
   transcriptDataState,
   webmFileUrlState,
+  timeIsAligned,
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -154,6 +155,7 @@ const VideoPlayer = ({
           decrepenacyState={decrepenacyState}
           currentTimeState={currentTimeState}
           handleDescrepancy={handleDescrepancy}
+          timeIsAligned={timeIsAligned}
         />
       )}
     </div>
