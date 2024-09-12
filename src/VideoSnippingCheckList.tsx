@@ -1,5 +1,6 @@
 const VideoSnippingCheckList = ({
   hasTxtFile,
+  webmFileState,
   hasWebmFile,
   hasTrimFromStart,
   hasTrimFromEnd,
@@ -9,7 +10,7 @@ const VideoSnippingCheckList = ({
   return (
     <div style={{ textAlign: 'left' }}>
       <ol>
-        <li>Upload .webm file {hasTxtFile ? '✅' : '❌'}</li>
+        <li>Upload .webm file {webmFileState ? '✅' : '❌'}</li>
         <li>
           Upload has content been named {hasContentBeenNamed ? '✅' : '❌'}
         </li>

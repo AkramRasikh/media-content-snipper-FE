@@ -15,9 +15,11 @@ function App() {
   const [currentTimeState, setCurrentTimeState] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [fileURL, setFileURL] = useState('');
-  const [file, setFile] = useState(null);
+  const [audioSnippetURLState, setAudioSnippetURLState] = useState('');
+  const [sceneStartState, setSceneStartState] = useState(null);
+  const [sceneEndstate, setSceneEndState] = useState(null);
 
-  const [transcriptDataState, setTranscriptDataState] = useState('');
+  const [transcriptDataState, setTranscriptDataState] = useState([]);
   const [error, setError] = useState(null);
   const [webmFileState, setWebmFileState] = useState(null);
   const [webmFileUrlState, setWebmFileUrlState] = useState(null);
@@ -45,7 +47,6 @@ function App() {
           },
         },
       );
-      console.log('## handleWebMToServer', { response });
 
       if (response.status === 200) {
         setUploadMessage(
@@ -123,6 +124,40 @@ function App() {
     }
   };
 
+  const handleCreateSnippetFromVideo = async () => {
+    if (!sceneStartState || !sceneEndstate) {
+      return;
+    }
+
+    const firstTrim = transcriptDataState.find(
+      (transcriptLine) => transcriptLine.id === sceneStartState,
+    );
+
+    const endTimeElIndex = transcriptDataState.findIndex(
+      (transcriptLine) => transcriptLine.id === sceneEndstate,
+    );
+
+    const isLastIndex = endTimeElIndex === transcriptDataState.length - 1;
+
+    if (isLastIndex) {
+      return;
+    }
+
+    try {
+      setIsLoading(true);
+      const response = await axios.post('http://localhost:4000/audio-snippet', {
+        contentName,
+        trimStart: firstTrim.time,
+        trimEnd: transcriptDataState[endTimeElIndex + 1].time,
+      });
+      setAudioSnippetURLState(response.data.file);
+    } catch (error) {
+      console.error('Error converting video to audio:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const getTrimFromStart = () => {
     if (decrepenacyState) {
       return secondsToHms(decrepenacyState);
@@ -167,6 +202,7 @@ function App() {
       <h1>Screen recording to compressed MP3</h1>
       <VideoSnippingCheckList
         hasTxtFile={transcriptDataState}
+        webmFileState={webmFileState}
         hasWebmFile={webmFileUrlState}
         hasTrimFromStart={decrepenacyState}
         hasTrimFromEnd={lastAudioTimeStampState}
@@ -205,9 +241,20 @@ function App() {
           transcriptDataState={transcriptDataState}
           webmFileUrlState={webmFileUrlState}
           timeIsAligned={fileURL}
+          setSceneEndState={setSceneEndState}
+          sceneStartState={sceneStartState}
+          setSceneStartState={setSceneStartState}
+          sceneEndstate={sceneEndstate}
         />
       ) : null}
-
+      <div>
+        <button
+          disabled={!Boolean(sceneStartState && sceneEndstate)}
+          onClick={handleCreateSnippetFromVideo}
+        >
+          Create snippet from {sceneStartState} ➡️ {sceneEndstate}
+        </button>
+      </div>
       <button
         onClick={handleConvertWebmToMP3}
         disabled={Boolean(

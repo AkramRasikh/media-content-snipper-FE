@@ -12,6 +12,10 @@ const VideoPlayer = ({
   setCurrentTimeState,
   transcriptDataState,
   webmFileUrlState,
+  setSceneEndState,
+  sceneStartState,
+  setSceneStartState,
+  sceneEndstate,
   timeIsAligned,
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -156,6 +160,10 @@ const VideoPlayer = ({
           currentTimeState={currentTimeState}
           handleDescrepancy={handleDescrepancy}
           timeIsAligned={timeIsAligned}
+          setSceneEndState={setSceneEndState}
+          sceneStartState={sceneStartState}
+          setSceneStartState={setSceneStartState}
+          sceneEndstate={sceneEndstate}
         />
       )}
     </div>

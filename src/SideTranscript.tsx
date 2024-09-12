@@ -4,6 +4,10 @@ export const MiniTransScript = ({
   currentTimeState,
   decrepenacyState,
   isUsingCutAudio,
+  setSceneEndState,
+  setSceneStartState,
+  sceneStartState,
+  sceneEndstate,
 }) => {
   const realDiffAudio = isUsingCutAudio ? 0 : decrepenacyState;
   return (
@@ -35,13 +39,39 @@ export const MiniTransScript = ({
                   marginTop: '10px',
                 }}
               >
-                <span>{subtitle.targetLang}</span>
+                <span>
+                  {sceneStartState === subtitle.id ? (
+                    <span
+                      style={{
+                        padding: '10px',
+                        width: '20px',
+                        background: 'green',
+                      }}
+                    />
+                  ) : null}
+                  {sceneEndstate === subtitle.id ? (
+                    <span
+                      style={{
+                        padding: '10px',
+                        width: '20px',
+                        background: 'red',
+                      }}
+                    />
+                  ) : null}
+                  {subtitle.targetLang}
+                </span>
                 <div>
                   <button
                     style={{ color: 'green' }}
                     onClick={() => goToTimeStamp(subtitle.time + realDiffAudio)}
                   >
                     {(subtitle.time + realDiffAudio).toFixed(2)}
+                  </button>
+                  <button onClick={() => setSceneStartState(subtitle.id)}>
+                    Cut from here
+                  </button>
+                  <button onClick={() => setSceneEndState(subtitle.id)}>
+                    End cut here
                   </button>
                 </div>
               </div>
@@ -61,7 +91,27 @@ const SideTranscript = ({
   currentTimeState,
   handleDescrepancy,
   timeIsAligned,
+  setSceneEndState,
+  sceneStartState,
+  setSceneStartState,
+  sceneEndstate,
 }) => {
+  if (timeIsAligned) {
+    return (
+      <MiniTransScript
+        subtitles={subtitles}
+        goToTimeStamp={goToTimeStamp}
+        currentTimeState={currentTimeState}
+        decrepenacyState={decrepenacyState}
+        isUsingCutAudio={false}
+        setSceneEndState={setSceneEndState}
+        setSceneStartState={setSceneStartState}
+        sceneStartState={sceneStartState}
+        sceneEndstate={sceneEndstate}
+      />
+    );
+  }
+
   return (
     <div style={{ height: '500px', overflowY: 'scroll' }}>
       <ul>

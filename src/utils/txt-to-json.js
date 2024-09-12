@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const txtToJSON = (txtData) => {
   // Split the file content into lines
   const lines = txtData.trim().split('\n');
@@ -31,6 +33,7 @@ export const txtToJSON = (txtData) => {
 
     // Create a JSON object and push it into the array
     subtitlesArray.push({
+      id: uuidv4(),
       time: timeToSeconds(time),
       targetLang: targetLang,
       baseLang: baseLang,
