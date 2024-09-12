@@ -3,6 +3,7 @@ import './App.css';
 import VideoPlayer from './VideoPlayer';
 import axios from 'axios';
 import { txtToJSON } from './utils/txt-to-json';
+import VideoSnippingCheckList from './VideoSnippingCheckList';
 
 function App() {
   const [decrepenacyState, setDecrepenacyState] = useState(null);
@@ -154,6 +155,12 @@ function App() {
       }}
     >
       <h1>Low frustration</h1>
+      <VideoSnippingCheckList
+        hasTxtFile={transcriptDataState}
+        hasWebmFile={webmFileUrlState}
+        hasTrimFromStart={decrepenacyState}
+        hasTrimFromEnd={lastAudioTimeStampState}
+      />
       <div>
         <input
           type='text'
@@ -169,12 +176,6 @@ function App() {
           onChange={handleInputFileNameChange}
           placeholder='Enter input file name'
         />
-        <div style={{ display: 'inline-flex', gap: '10px' }}>
-          <input type='file' accept='*/*' onChange={handleFileChange} />
-          <button disabled={!file} onClick={handleTxtToJson}>
-            txt to json
-          </button>
-        </div>
       </div>
       <div style={{ display: 'inline-flex', gap: '10px', margin: '10px' }}>
         <p>Webm ting</p>
