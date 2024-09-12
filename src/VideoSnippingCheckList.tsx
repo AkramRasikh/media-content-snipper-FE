@@ -7,7 +7,7 @@ const VideoSnippingCheckList = ({
   hasContentBeenNamed,
 }) => {
   return (
-    <div>
+    <div style={{ textAlign: 'left' }}>
       <ol>
         <li>Upload .webm file {hasTxtFile ? '✅' : '❌'}</li>
         <li>

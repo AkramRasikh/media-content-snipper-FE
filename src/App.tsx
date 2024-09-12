@@ -20,9 +20,10 @@ function App() {
   const [webmFileState, setWebmFileState] = useState(null);
   const [webmFileUrlState, setWebmFileUrlState] = useState(null);
   const [uploadMessage, setUploadMessage] = useState('');
+  const [hasVideoBeenUploaded, setHasVideoBeenUploaded] = useState(false);
 
   const handleWebMToServer = async () => {
-    if (!webmFileState) {
+    if (!webmFileState || !hasVideoBeenUploaded) {
       alert('Please select a file first.');
       return;
     }
@@ -31,6 +32,7 @@ function App() {
     formData.append('file', webmFileState);
 
     try {
+      setIsLoading(true);
       const response = await axios.post(
         'http://localhost:4000/upload-file',
         formData,
@@ -40,16 +42,23 @@ function App() {
           },
         },
       );
-      setUploadMessage(`File uploaded successfully: ${response.data.filePath}`);
+      if (response.status === 200) {
+        setUploadMessage(
+          `File uploaded successfully: ${response.data.filePath}`,
+        );
+        setHasVideoBeenUploaded(true);
+      }
     } catch (error) {
       console.error('Error uploading file:', error);
       setUploadMessage('Failed to upload file');
+    } finally {
+      setIsLoading(false);
     }
   };
 
   const handleTxtToJson = (fileData) => {
     const res = txtToJSON(fileData);
-    setTranscriptDataState(res);
+    setTranscriptDataState(res as any);
   };
 
   const handleFileChange = (event) => {
@@ -68,7 +77,6 @@ function App() {
 
       // Read the file as text
       reader.readAsText(thisFile);
-      console.log('## ', { first: event.target.files[0], thisFile });
     }
   };
 
@@ -133,13 +141,30 @@ function App() {
         padding: '15px',
       }}
     >
-      <h1>Low frustration</h1>
+      {isLoading ? (
+        <div
+          style={{ position: 'absolute', top: '30px', display: 'inline-flex' }}
+        >
+          <p
+            style={{
+              textAlign: 'center',
+              fontWeight: 700,
+              color: 'red',
+              fontSize: 30,
+            }}
+          >
+            ...LOADING!!
+          </p>
+        </div>
+      ) : null}
+      <h1>Screen recording to compressed MP3</h1>
       <VideoSnippingCheckList
         hasTxtFile={transcriptDataState}
         hasWebmFile={webmFileUrlState}
         hasTrimFromStart={decrepenacyState}
         hasTrimFromEnd={lastAudioTimeStampState}
         hasContentBeenNamed={contentName}
+        hasWebmBeenSentToServer={hasVideoBeenUploaded}
       />
       <div>
         <input
@@ -195,6 +220,11 @@ function App() {
         </div>
       </div>
       <div>
+        <button disabled={!hasVideoBeenUploaded} onClick={handleWebMToServer}>
+          webm to server
+        </button>
+      </div>
+      <div>
         <p style={{ display: 'inline-flex', gap: '10px' }}>{commandToCopy}</p>
       </div>
       {webmFileUrlState ? (
@@ -209,9 +239,7 @@ function App() {
           webmFileUrlState={webmFileUrlState}
         />
       ) : null}
-      {webmFileState && (
-        <button onClick={handleWebMToServer}>webm to server</button>
-      )}
+
       <button
         onClick={handleConvert}
         disabled={Boolean(

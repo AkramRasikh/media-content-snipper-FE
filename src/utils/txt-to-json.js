@@ -1,7 +1,5 @@
 export const txtToJSON = (txtData) => {
   // Split the file content into lines
-  console.log('## ', txtData);
-
   const lines = txtData.trim().split('\n');
 
   // Initialize an array to hold the JSON objects
