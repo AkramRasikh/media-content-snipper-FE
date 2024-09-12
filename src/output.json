@@ -1,0 +1,1322 @@
+[
+    {
+        "time": 70,
+        "targetLang": "(マスターの声)1日が終わり人々が家路へと急ぐ頃",
+        "baseLang": "When people finish their day and hurry home,"
+    },
+    {
+        "time": 75,
+        "targetLang": "俺の1日は始まる",
+        "baseLang": "my day starts."
+    },
+    {
+        "time": 101,
+        "targetLang": "営業時間は夜12時から朝7時頃まで",
+        "baseLang": "My diner is open from midnight to seven in the morning."
+    },
+    {
+        "time": 107,
+        "targetLang": "人は“深夜食堂”って言ってるよ",
+        "baseLang": "They call it \"Midnight Diner.\""
+    },
+    {
+        "time": 113,
+        "targetLang": "メニューはこれだけ",
+        "baseLang": "That's all I have on my menu."
+    },
+    {
+        "time": 115,
+        "targetLang": "あとは勝手に注文してくれりゃ",
+        "baseLang": "But I make whatever customers request"
+    },
+    {
+        "time": 118,
+        "targetLang": "できるもんなら作るよってのが",
+        "baseLang": "as long as I have ingredients for it."
+    },
+    {
+        "time": 121,
+        "targetLang": "俺の営業方針さ",
+        "baseLang": "That's my policy."
+    },
+    {
+        "time": 127,
+        "targetLang": "客が来るかって?それがけっこう来るんだよ",
+        "baseLang": "Do I even have customers? More than you would expect."
+    },
+    {
+        "time": 163,
+        "targetLang": "(マスターの声)うちでラーメンといえばインスタントだけど",
+        "baseLang": "I use instant dried noodles for ramen."
+    },
+    {
+        "time": 167,
+        "targetLang": "タンメンは生麺を使ってるんだ",
+        "baseLang": "But for tan-men, I use fresh noodles."
+    },
+    {
+        "time": 170,
+        "targetLang": "その方がタンメンに合うからね",
+        "baseLang": "They are better suited for tan-men."
+    },
+    {
+        "time": 180,
+        "targetLang": "夜中のラーメンは罪悪感があるけど",
+        "baseLang": "I feel guilty eating ramen at night."
+    },
+    {
+        "time": 182,
+        "targetLang": "タンメンなら野菜が取れていいよね",
+        "baseLang": "Tan-men is good since it comes with veggies."
+    },
+    {
+        "time": 185,
+        "targetLang": "(ルミ)また始まった",
+        "baseLang": "Here you go again."
+    },
+    {
+        "time": 187,
+        "targetLang": "そんな言い訳するくらいなら食べなきゃいいのに",
+        "baseLang": "If you're going to make excuses, just don't eat it at all."
+    },
+    {
+        "time": 191,
+        "targetLang": "人はそんな簡単に割り切れない",
+        "baseLang": "It's like life. We can't make rational choices all the time."
+    },
+    {
+        "time": 196,
+        "targetLang": "“気を付けろその一口が豚になる”",
+        "baseLang": "Be careful. It's that extra bite that makes you fat."
+    },
+    {
+        "time": 201,
+        "targetLang": "ラジオ局のアナウンサーなんだけど",
+        "baseLang": "Mr. Shimada is a radio announcer."
+    },
+    {
+        "time": 205,
+        "targetLang": "健康診断で医者から隠れ肥満の宣告を受けたらしい",
+        "baseLang": "I guess his doctor had told him to watch his weight."
+    },
+    {
+        "time": 214,
+        "targetLang": "(マスター)いらっしゃい",
+        "baseLang": "Welcome."
+    },
+    {
+        "time": 215,
+        "targetLang": "(木内晴美(きうちはるみ))どうも",
+        "baseLang": "Hi."
+    },
+    {
+        "time": 223,
+        "targetLang": "タンメン麺抜きね",
+        "baseLang": "Tan-men, no noodles."
+    },
+    {
+        "time": 225,
+        "targetLang": "あいよ",
+        "baseLang": "Got it."
+    },
+    {
+        "time": 233,
+        "targetLang": "(マスター)はいお待ち麺抜き",
+        "baseLang": "Here you go. Without noodles."
+    },
+    {
+        "time": 236,
+        "targetLang": "いただきます",
+        "baseLang": "Thank you."
+    },
+    {
+        "time": 253,
+        "targetLang": "あの...",
+        "baseLang": "Excuse me."
+    },
+    {
+        "time": 255,
+        "targetLang": "そんなのありですか?",
+        "baseLang": "I've never heard of such a dish."
+    },
+    {
+        "time": 259,
+        "targetLang": "あっ...夜中に炭水化物食べるとあれだから",
+        "baseLang": "I don't want to have carbohydrates late at night."
+    },
+    {
+        "time": 264,
+        "targetLang": "それに野菜食べてるうちに",
+        "baseLang": "Besides, noodles get soggy"
+    },
+    {
+        "time": 267,
+        "targetLang": "麺がスープ吸ってどんどん増えちゃうでしょう?",
+        "baseLang": "while I eat the vegetables."
+    },
+    {
+        "time": 270,
+        "targetLang": "まあ確かに理にはかなっているけど",
+        "baseLang": "Well, that makes sense, but..."
+    },
+    {
+        "time": 273,
+        "targetLang": "マスターお茶漬けやめて",
+        "baseLang": "Master, cancel my order of rice with tea."
+    },
+    {
+        "time": 276,
+        "targetLang": "今日の締めは私もタンメン麺抜きで",
+        "baseLang": "I will have tan-men without noodles, just like her."
+    },
+    {
+        "time": 278,
+        "targetLang": "(マスター)あいよ",
+        "baseLang": "Sure."
+    },
+    {
+        "time": 282,
+        "targetLang": "仕事終わりですか?",
+        "baseLang": "Are you done for the night?"
+    },
+    {
+        "time": 287,
+        "targetLang": "朝までもう一稼ぎしないと",
+        "baseLang": "Not yet. I will work until morning."
+    },
+    {
+        "time": 290,
+        "targetLang": "すごいなあ",
+        "baseLang": "I'm so impressed by you."
+    },
+    {
+        "time": 292,
+        "targetLang": "私方向音痴だからなあ",
+        "baseLang": "I have no sense of direction."
+    },
+    {
+        "time": 295,
+        "targetLang": "やっぱりナビ使うんですよね?",
+        "baseLang": "Do you use a navigation system?"
+    },
+    {
+        "time": 298,
+        "targetLang": "都内の道は基本頭に入ってるから",
+        "baseLang": "I know every street in Tokyo."
+    },
+    {
+        "time": 303,
+        "targetLang": "麺抜きねえ",
+        "baseLang": "Without noodles, huh?"
+    },
+    {
+        "time": 306,
+        "targetLang": "(マスターの声)島田さんやたら感心してると思ったら",
+        "baseLang": "Mr. Shimada was so impressed that..."
+    },
+    {
+        "time": 311,
+        "targetLang": "(島田)田端(たばた)の魔女さん私もいろんな方法試しました",
+        "baseLang": "Hi Ms. Witch of Tabata, I've also tried every method."
+    },
+    {
+        "time": 316,
+        "targetLang": "リンゴダイエットなんてのもやりましたが",
+        "baseLang": "There's one called the Apple Diet."
+    },
+    {
+        "time": 319,
+        "targetLang": "あれじゃおなか膨れませんよ",
+        "baseLang": "Don't try it. It didn't fill me up at all."
+    },
+    {
+        "time": 321,
+        "targetLang": "アップルパイでいいやって食べ続けてたら余計デブになっちゃいまして",
+        "baseLang": "So I switched to eating apple pies, but then I got even fatter."
+    },
+    {
+        "time": 326,
+        "targetLang": "それもおなかだけ",
+        "baseLang": "It all went straight to my gut."
+    },
+    {
+        "time": 330,
+        "targetLang": "ところでそば屋で“抜き”といえば天ぷらそばのそば抜きで",
+        "baseLang": "Anyway, \"without\" at a noodle shop means tempura soba without noodles."
+    },
+    {
+        "time": 334,
+        "targetLang": "これで一杯やってる方を見ると",
+        "baseLang": "If someone orders that with a drink,"
+    },
+    {
+        "time": 336,
+        "targetLang": "“はぁ通だね”なんて思ったりしますが",
+        "baseLang": "I know he's a real connoisseur."
+    },
+    {
+        "time": 340,
+        "targetLang": "最近行きつけの店で",
+        "baseLang": "Recently I met someone"
+    },
+    {
+        "time": 342,
+        "targetLang": "タンメンの麺抜き注文してる方がいらっしゃったんですよ",
+        "baseLang": "who ordered tan-men without noodles at my favorite diner."
+    },
+    {
+        "time": 347,
+        "targetLang": "これよく考えたら具の多い野菜スープなんですけど",
+        "baseLang": "Tan-men without noodles is basically hearty vegetable soup."
+    },
+    {
+        "time": 353,
+        "targetLang": "これなら体重を気にしている方にもいいんじゃないかと思いまして...",
+        "baseLang": "It would be a great meal for someone who is watching their weight."
+    },
+    {
+        "time": 356,
+        "targetLang": "(客)へえ変わった食い物(もん)頼む人がいるんだね",
+        "baseLang": "Really? What a strange dish to order."
+    },
+    {
+        "time": 362,
+        "targetLang": "ハハッそうですね",
+        "baseLang": "You're right."
+    },
+    {
+        "time": 369,
+        "targetLang": "(忠(ちゅう)さん)ゆんべのあれここのことだったのかい?",
+        "baseLang": "Was it about this diner?"
+    },
+    {
+        "time": 372,
+        "targetLang": "そうなの島田さんのラジオ番組",
+        "baseLang": "That's right. It was Mr. Shimada's radio show."
+    },
+    {
+        "time": 375,
+        "targetLang": "そしたら麺抜きの話してて",
+        "baseLang": "He talked about tan-men without noodles."
+    },
+    {
+        "time": 377,
+        "targetLang": "麺抜きってあの晴美さんのこと?",
+        "baseLang": "That was about Ms. Harumi, right?"
+    },
+    {
+        "time": 381,
+        "targetLang": "(小道(こみち))誰なんです?その女性って",
+        "baseLang": "-That's right. -Who is she?"
+    },
+    {
+        "time": 383,
+        "targetLang": "(マスター)ほらタクシーの運転手やってる",
+        "baseLang": "Don't you remember? The female taxi driver."
+    },
+    {
+        "time": 387,
+        "targetLang": "あああの年増のいい女?",
+        "baseLang": "That good-looking woman who is past her prime?"
+    },
+    {
+        "time": 390,
+        "targetLang": "年増っていかほど?",
+        "baseLang": "Past her prime? How old is she?"
+    },
+    {
+        "time": 392,
+        "targetLang": "四十半ばごろじゃねえかな",
+        "baseLang": "My guess is..."
+    },
+    {
+        "time": 397,
+        "targetLang": "いやむしろ熟女としてはまだ未熟かも",
+        "baseLang": "I wouldn't even call her mature."
+    },
+    {
+        "time": 400,
+        "targetLang": "新陳代謝が限りなくスローな女性ってそそるんすよね",
+        "baseLang": "I have a thing for women with low metabolic rates."
+    },
+    {
+        "time": 404,
+        "targetLang": "性的リビドーがこうギンギンきます",
+        "baseLang": "I get a strong libido for such women."
+    },
+    {
+        "time": 407,
+        "targetLang": "長生きするよお前は",
+        "baseLang": "You will live long."
+    },
+    {
+        "time": 409,
+        "targetLang": "マスター俺もタンメンの麺抜きで",
+        "baseLang": "Can I try tan-men without noodles?"
+    },
+    {
+        "time": 413,
+        "targetLang": "僕もお願いします(マスター)あいよ",
+        "baseLang": "-Me, too. -Sure."
+    },
+    {
+        "time": 417,
+        "targetLang": "(小道)いいですか?スローな感じ",
+        "baseLang": "Can I? You look mellow."
+    },
+    {
+        "time": 420,
+        "targetLang": "(シャッター音)スロー?(シャッター音)",
+        "baseLang": "-Here's one. -Mellow?"
+    },
+    {
+        "time": 427,
+        "targetLang": "(マスターの声)それから2週間後のことだった",
+        "baseLang": "Two weeks later..."
+    },
+    {
+        "time": 436,
+        "targetLang": "やっぱりあれあたしのことだったんだ",
+        "baseLang": "I knew it. It was about me, huh?"
+    },
+    {
+        "time": 440,
+        "targetLang": "すいません勝手に話のネタに使っちゃって",
+        "baseLang": "I'm sorry for using your story without your permission."
+    },
+    {
+        "time": 443,
+        "targetLang": "とてもおいしそうに召し上がってらしたから",
+        "baseLang": "The way you were eating made the dish look so tasty."
+    },
+    {
+        "time": 449,
+        "targetLang": "昔のことを思い出しちゃった",
+        "baseLang": "It reminded me of this one time..."
+    },
+    {
+        "time": 451,
+        "targetLang": "電話でラジオにリクエストして",
+        "baseLang": "I called into a show to request a song,"
+    },
+    {
+        "time": 454,
+        "targetLang": "名前呼ばれたことがあったから",
+        "baseLang": "and my name was mentioned."
+    },
+    {
+        "time": 456,
+        "targetLang": "電リク世代ですね",
+        "baseLang": "The late-night-radio generation!"
+    },
+    {
+        "time": 457,
+        "targetLang": "アハッ年バレちゃうな",
+        "baseLang": "Now you know how old I am."
+    },
+    {
+        "time": 461,
+        "targetLang": "目指してたんですか?DJ",
+        "baseLang": "So, why a radio jockey?"
+    },
+    {
+        "time": 465,
+        "targetLang": "憧れてたんです深夜放送のDJに",
+        "baseLang": "I looked up to late-night radio jockeys."
+    },
+    {
+        "time": 469,
+        "targetLang": "つまんないことで悩んだり",
+        "baseLang": "When I got sad or stressed out,"
+    },
+    {
+        "time": 471,
+        "targetLang": "落ち込んでやりきれないとき",
+        "baseLang": "and didn't know what to do,"
+    },
+    {
+        "time": 474,
+        "targetLang": "ああ独りぼっちじゃないんだって",
+        "baseLang": "they helped me feel like I wasn't alone."
+    },
+    {
+        "time": 479,
+        "targetLang": "分かるなあその感じ",
+        "baseLang": "I know what you mean."
+    },
+    {
+        "time": 488,
+        "targetLang": "はい",
+        "baseLang": "Yes."
+    },
+    {
+        "time": 490,
+        "targetLang": "分かりました",
+        "baseLang": "Sure."
+    },
+    {
+        "time": 492,
+        "targetLang": "すぐ近くにいますので",
+        "baseLang": "I'm nearby."
+    },
+    {
+        "time": 495,
+        "targetLang": "5分ほどしたらお迎えにあがります",
+        "baseLang": "I will pick you up in five minutes."
+    },
+    {
+        "time": 498,
+        "targetLang": "いつものところで待ってます",
+        "baseLang": "See you at the same spot."
+    },
+    {
+        "time": 500,
+        "targetLang": "じゃ後ほど",
+        "baseLang": "See you soon."
+    },
+    {
+        "time": 505,
+        "targetLang": "お得意様ですか?",
+        "baseLang": "Is that a regular customer?"
+    },
+    {
+        "time": 508,
+        "targetLang": "レギュラーいると助かるのよ",
+        "baseLang": "Regular customers are great."
+    },
+    {
+        "time": 510,
+        "targetLang": "今日みたいに流してもお客さんがいないときに",
+        "baseLang": "It's not always easy finding customers just by driving around."
+    },
+    {
+        "time": 514,
+        "targetLang": "マスターお勘定",
+        "baseLang": "Master, check please."
+    },
+    {
+        "time": 532,
+        "targetLang": "どっかで会ったような気がするんだよなあ",
+        "baseLang": "Why does she looks so familiar to me?"
+    },
+    {
+        "time": 539,
+        "targetLang": "絶対間違いないですよ〝紅の楓(かえで)〞",
+        "baseLang": "Don't you think they look alike? I have no doubt."
+    },
+    {
+        "time": 545,
+        "targetLang": "(マスター)うーん...確かに似てるけど",
+        "baseLang": "They do look alike."
+    },
+    {
+        "time": 549,
+        "targetLang": "これ何だい?",
+        "baseLang": "What is this anyway?"
+    },
+    {
+        "time": 550,
+        "targetLang": "紅の楓じゃないですか",
+        "baseLang": "She's Crimson Maple."
+    },
+    {
+        "time": 553,
+        "targetLang": "あの伝説の「忍者戦隊コーガ」の",
+        "baseLang": "From the legendary TV show, Super Ninja Squadron Koga."
+    },
+    {
+        "time": 555,
+        "targetLang": "知ってっか?",
+        "baseLang": "Do you know it?"
+    },
+    {
+        "time": 556,
+        "targetLang": "(小道)いや戦隊もんってたくさんあったんでもうどれがどれだか",
+        "baseLang": "No. There were too many ninja squadron shows."
+    },
+    {
+        "time": 562,
+        "targetLang": "“漆黒のムササビ”",
+        "baseLang": "Black Flying Squirrel,"
+    },
+    {
+        "time": 564,
+        "targetLang": "〝萌黄(もえぎ)の米蔵(よねぞう)〞〝橙(だいだい)のタスケ〞",
+        "baseLang": "Ultramarine Gale, Light-green Yonezo, Orange Tasuke,"
+    },
+    {
+        "time": 568,
+        "targetLang": "〝紅の楓〞",
+        "baseLang": "and Crimson Maple."
+    },
+    {
+        "time": 572,
+        "targetLang": "“五人の忍びがそろうとき誰にも知られず悪を断つ!”",
+        "baseLang": "Five super ninjas kill evildoers, leaving no trace!"
+    },
+    {
+        "time": 579,
+        "targetLang": "子供のときに楓さんにファンレター送ったんですよ",
+        "baseLang": "When I was a kid, I sent her a fan letter."
+    },
+    {
+        "time": 583,
+        "targetLang": "そしたらこのブロマイドが届いたんですよ",
+        "baseLang": "Then she sent me this photo."
+    },
+    {
+        "time": 587,
+        "targetLang": "覚えてるかな?僕のこと",
+        "baseLang": "I wonder if she remembers me."
+    },
+    {
+        "time": 594,
+        "targetLang": "(島田)中年ライダーさん",
+        "baseLang": "Mr. Middle-aged Rider,"
+    },
+    {
+        "time": 596,
+        "targetLang": "いくつになっても恋したっていいじゃないですか",
+        "baseLang": "there is no age limit for falling in love."
+    },
+    {
+        "time": 599,
+        "targetLang": "ただストーカーはダメですよ",
+        "baseLang": "But don't be a stalker."
+    },
+    {
+        "time": 601,
+        "targetLang": "相手の気持ちを思いやんないと",
+        "baseLang": "Please consider how your love interest feels."
+    },
+    {
+        "time": 606,
+        "targetLang": "恋といえば僕最近初恋の女性にたまたまある場所で再会したんですよ",
+        "baseLang": "I recently ran into my first love at the most random place."
+    },
+    {
+        "time": 615,
+        "targetLang": "全く僕のことなんか知らないんですけどね",
+        "baseLang": "She doesn't even know who I am."
+    },
+    {
+        "time": 618,
+        "targetLang": "ご存じのリスナーの方もいると思うんですが僕が子供のころ",
+        "baseLang": "Some of you may remember a TV show called Super Ninja Squadron Koga,"
+    },
+    {
+        "time": 623,
+        "targetLang": "「忍者戦隊コーガ」って戦隊ものがありまして",
+        "baseLang": "which was popular when I was a kid."
+    },
+    {
+        "time": 626,
+        "targetLang": "そのメンバーの一人紅の楓さんが",
+        "baseLang": "One of the show's characters, Crimson Maple,"
+    },
+    {
+        "time": 629,
+        "targetLang": "僕の初恋の人だったんです",
+        "baseLang": "is my first love."
+    },
+    {
+        "time": 632,
+        "targetLang": "楓さんだって分かった瞬間",
+        "baseLang": "When I knew that she was Crimson Maple,"
+    },
+    {
+        "time": 634,
+        "targetLang": "僕の頭にこの曲が流れました",
+        "baseLang": "this song started playing in my head."
+    },
+    {
+        "time": 637,
+        "targetLang": "「忍者戦隊コーガ」の主題歌“刃の心で駆け抜けろ”です",
+        "baseLang": "It's the main theme song from Super Ninja Squadron Koga."
+    },
+    {
+        "time": 646,
+        "targetLang": "(金本)へえ懐かしいな",
+        "baseLang": "That brings back so many memories."
+    },
+    {
+        "time": 649,
+        "targetLang": "あのコーガのファンクラブ作るんすか?",
+        "baseLang": "Are you starting a fan club for that show?"
+    },
+    {
+        "time": 651,
+        "targetLang": "ええ",
+        "baseLang": "That's right."
+    },
+    {
+        "time": 652,
+        "targetLang": "まずは様子見で番組のホームページで発表したんです",
+        "baseLang": "I announced it on my website to see the listeners' reactions."
+    },
+    {
+        "time": 656,
+        "targetLang": "そしたら反響がすごくて",
+        "baseLang": "The feedback was amazing."
+    },
+    {
+        "time": 658,
+        "targetLang": "僕がいちばん好きだったのはあの...抜け忍だった楓を",
+        "baseLang": "My favorite episode is when the leader welcomed Maple,"
+    },
+    {
+        "time": 661,
+        "targetLang": "リーダーのムササビが迎え入れる...",
+        "baseLang": "a lone ninja, to their squadron."
+    },
+    {
+        "time": 663,
+        "targetLang": "そう!そうそう!",
+        "baseLang": "-\"If It Is Hidden, It Is The Flower.\" -Yes!"
+    },
+    {
+        "time": 665,
+        "targetLang": "ムササビが言うじゃないですか",
+        "baseLang": "Flying Squirrel says..."
+    },
+    {
+        "time": 667,
+        "targetLang": "〝俺たちがお前を守る〞",
+        "baseLang": "\"We got your back."
+    },
+    {
+        "time": 668,
+        "targetLang": "〝だから逃げずに戦え〞って",
+        "baseLang": "So don't run. Just fight.\""
+    },
+    {
+        "time": 671,
+        "targetLang": "子供ながらにぐっときたなあ",
+        "baseLang": "Even as a kid, I was so moved."
+    },
+    {
+        "time": 673,
+        "targetLang": "分かるなあ",
+        "baseLang": "I felt the same way."
+    },
+    {
+        "time": 674,
+        "targetLang": "(金本)ねえねえあの...タスケとハヤテってさ...",
+        "baseLang": "And Flying Squirrel and..."
+    },
+    {
+        "time": 677,
+        "targetLang": "(小寿々(こすず))ガキねえ男って",
+        "baseLang": "Men..."
+    },
+    {
+        "time": 681,
+        "targetLang": "(マスター)お待たせジャンボ豚汁定食",
+        "baseLang": "Extra large pork and veggie soup combo."
+    },
+    {
+        "time": 689,
+        "targetLang": "あんたたち盛り上がるのはいいけど",
+        "baseLang": "Hey, guys."
+    },
+    {
+        "time": 693,
+        "targetLang": "少しはその人の気持ち思いやったらどうなの?",
+        "baseLang": "but have you thought about how she would feel?"
+    },
+    {
+        "time": 697,
+        "targetLang": "ねえマスター",
+        "baseLang": "Don't you agree, Master?"
+    },
+    {
+        "time": 699,
+        "targetLang": "まあね",
+        "baseLang": "Yeah..."
+    },
+    {
+        "time": 700,
+        "targetLang": "いろいろあって今があるんだろうからね",
+        "baseLang": "I'm sure many things have led her to where she is now."
+    },
+    {
+        "time": 704,
+        "targetLang": "それも含めて僕は自分の番組に出てもらおうと思ってます",
+        "baseLang": "And that's what I want her to talk about on my show."
+    },
+    {
+        "time": 709,
+        "targetLang": "あの人きちんと仕事している人なんだろうなって",
+        "baseLang": "She's diligent, and loyal to her job."
+    },
+    {
+        "time": 713,
+        "targetLang": "ここで会って感じたんです勘だけど",
+        "baseLang": "I felt it when I met her. It's just a hunch, but..."
+    },
+    {
+        "time": 717,
+        "targetLang": "だから自分の過去も笑って話せるんじゃないかって",
+        "baseLang": "I think she could even talk about her downs positively."
+    },
+    {
+        "time": 720,
+        "targetLang": "そうですよとっくに吹っ切ってますよ",
+        "baseLang": "That's right. She must have moved on by now."
+    },
+    {
+        "time": 723,
+        "targetLang": "今じゃタクシードライバーで頑張ってんだから",
+        "baseLang": "She is a good taxi driver now."
+    },
+    {
+        "time": 726,
+        "targetLang": "きっといい思い出ですよ",
+        "baseLang": "I'm sure her past is just a fond memory now."
+    },
+    {
+        "time": 731,
+        "targetLang": "(晴美)あなたにはいい思い出でも",
+        "baseLang": "It's a fond memory for you,"
+    },
+    {
+        "time": 733,
+        "targetLang": "あたしにはそうじゃない",
+        "baseLang": "but it's not for me."
+    },
+    {
+        "time": 737,
+        "targetLang": "もともと好きでやった役じゃないし",
+        "baseLang": "I didn't like the role to begin with."
+    },
+    {
+        "time": 741,
+        "targetLang": "あの後何をやっても“コーガの楓”って言われた",
+        "baseLang": "No matter who I played, I was always Maple of Koga."
+    },
+    {
+        "time": 747,
+        "targetLang": "それがイヤで役者辞めたようなもんなのに",
+        "baseLang": "That's the main reason why I quit acting."
+    },
+    {
+        "time": 751,
+        "targetLang": "そうだったんですか",
+        "baseLang": "I didn't know that."
+    },
+    {
+        "time": 753,
+        "targetLang": "いろいろあって今の生活があるわけだし",
+        "baseLang": "I've been through a lot to be here now."
+    },
+    {
+        "time": 756,
+        "targetLang": "おもしろおかしく騒ぎ立てられるのは...",
+        "baseLang": "Don't expose my life for your own interest."
+    },
+    {
+        "time": 759,
+        "targetLang": "そういうつもりじゃ...",
+        "baseLang": "That wasn't my--"
+    },
+    {
+        "time": 761,
+        "targetLang": "いや結果そうですよね",
+        "baseLang": "But... I understand your point."
+    },
+    {
+        "time": 764,
+        "targetLang": "すいませんでした",
+        "baseLang": "I'm really sorry."
+    },
+    {
+        "time": 782,
+        "targetLang": "マスターお代わり",
+        "baseLang": "Master, another one."
+    },
+    {
+        "time": 789,
+        "targetLang": "(マスター)珍しいねうちで飲むなんて",
+        "baseLang": "What's the occasion? You've never had a drink here."
+    },
+    {
+        "time": 794,
+        "targetLang": "うん島田さん来てる?",
+        "baseLang": "Does Mr. Shimada still visit?"
+    },
+    {
+        "time": 798,
+        "targetLang": "そういやここんとこ顔出さないな",
+        "baseLang": "Speaking of... he hasn't in a while."
+    },
+    {
+        "time": 806,
+        "targetLang": "あたしねようやく誰にでも胸張って言えるくらい",
+        "baseLang": "can finally tell everyone with pride..."
+    },
+    {
+        "time": 811,
+        "targetLang": "今の仕事気に入ってるの",
+        "baseLang": "how much I love my current job."
+    },
+    {
+        "time": 814,
+        "targetLang": "島田さんもそう言ってたよ",
+        "baseLang": "Mr. Shimada said the same thing."
+    },
+    {
+        "time": 817,
+        "targetLang": "晴美さんはきちんと仕事してるって",
+        "baseLang": "\"She's diligent, and loyal to her job.\""
+    },
+    {
+        "time": 823,
+        "targetLang": "そう",
+        "baseLang": "Is that right?"
+    },
+    {
+        "time": 828,
+        "targetLang": "マスター麺抜き",
+        "baseLang": "Master, \"without noodles\" please."
+    },
+    {
+        "time": 832,
+        "targetLang": "あいよ",
+        "baseLang": "Sure."
+    },
+    {
+        "time": 848,
+        "targetLang": "あのころあたしがいちばん芝居も下手くそだったのに",
+        "baseLang": "Back then, I was the worst actress in the group."
+    },
+    {
+        "time": 852,
+        "targetLang": "それ認めたくなくて",
+        "baseLang": "I didn't want to admit it."
+    },
+    {
+        "time": 855,
+        "targetLang": "他の人をけなして周りに八つ当たりして",
+        "baseLang": "and took my stress out on others."
+    },
+    {
+        "time": 859,
+        "targetLang": "本当最低だった",
+        "baseLang": "I was really awful."
+    },
+    {
+        "time": 864,
+        "targetLang": "でもそんなあたしのことリーダーはいつもかばってくれたんだ",
+        "baseLang": "But even then, the leader always defended me."
+    },
+    {
+        "time": 871,
+        "targetLang": "リーダーの人何ていったっけ?",
+        "baseLang": "What's the name of his character?"
+    },
+    {
+        "time": 874,
+        "targetLang": "ムササビ",
+        "baseLang": "Flying Squirrel."
+    },
+    {
+        "time": 876,
+        "targetLang": "ああそうだった",
+        "baseLang": "That's right."
+    },
+    {
+        "time": 879,
+        "targetLang": "ムササビっていい男だったんだ",
+        "baseLang": "Flying Squirrel was a good man, huh?"
+    },
+    {
+        "time": 887,
+        "targetLang": "好きだった",
+        "baseLang": "I fell in love with him."
+    },
+    {
+        "time": 891,
+        "targetLang": "でもね...",
+        "baseLang": "But then..."
+    },
+    {
+        "time": 897,
+        "targetLang": "おはようございます",
+        "baseLang": "Good morning."
+    },
+    {
+        "time": 902,
+        "targetLang": "(晴美)あのときいつもより早めにスタジオ来たら...",
+        "baseLang": "One day I went to the studio earlier than usual."
+    },
+    {
+        "time": 919,
+        "targetLang": "(リーダー)いや俺...",
+        "baseLang": "I..."
+    },
+    {
+        "time": 922,
+        "targetLang": "ごめん",
+        "baseLang": "Sorry."
+    },
+    {
+        "time": 929,
+        "targetLang": "(リーダー)今日さ俺おごるから",
+        "baseLang": "This one is on me."
+    },
+    {
+        "time": 931,
+        "targetLang": "ええ~いいよ無理しなくて",
+        "baseLang": "No, you really don't need to do that."
+    },
+    {
+        "time": 934,
+        "targetLang": "(リーダー)いやさすがに",
+        "baseLang": "Please, let me."
+    },
+    {
+        "time": 935,
+        "targetLang": "(晴美)ムササビ本当は女の子になりたかったって",
+        "baseLang": "He wished he had been born a girl."
+    },
+    {
+        "time": 939,
+        "targetLang": "あたしにだけ話してくれたの",
+        "baseLang": "He confided in me about it."
+    },
+    {
+        "time": 943,
+        "targetLang": "おかげで恋人にはなり損ねたけど",
+        "baseLang": "Thanks to that, I couldn't be in love with him,"
+    },
+    {
+        "time": 947,
+        "targetLang": "あたしは掛け替えのない友達を手に入れた",
+        "baseLang": "but I got an indispensable friendship."
+    },
+    {
+        "time": 954,
+        "targetLang": "(マスター)はい",
+        "baseLang": "Here you go."
+    },
+    {
+        "time": 958,
+        "targetLang": "(晴美)2人ともお金なかったから",
+        "baseLang": "We didn't have much money..."
+    },
+    {
+        "time": 961,
+        "targetLang": "飲むときはこれをつまみ代わりにしてたんだ",
+        "baseLang": "so we always had a drink with this dish."
+    },
+    {
+        "time": 968,
+        "targetLang": "ラジオで話題になって",
+        "baseLang": "I was afraid that old fans might scrutinize his current life"
+    },
+    {
+        "time": 970,
+        "targetLang": "昔のファンがムササビのこと調べたりしたらヤだなって",
+        "baseLang": "if the show renewed their interest."
+    },
+    {
+        "time": 976,
+        "targetLang": "ずっと守ってもらってたから",
+        "baseLang": "Since he protected me back then,"
+    },
+    {
+        "time": 978,
+        "targetLang": "今度はあたしが守んなきゃって",
+        "baseLang": "it was my turn to protect him now."
+    },
+    {
+        "time": 985,
+        "targetLang": "でも余計なお世話だったみたい",
+        "baseLang": "But it turned out that it was none of my concern."
+    },
+    {
+        "time": 989,
+        "targetLang": "ムササビに聞いたのかい?",
+        "baseLang": "Did Flying Squirrel tell you that?"
+    },
+    {
+        "time": 993,
+        "targetLang": "“あんたの人生はあんたのもので”",
+        "baseLang": "\"Your life is your business."
+    },
+    {
+        "time": 996,
+        "targetLang": "“あたしの人生はあたしのものなの”",
+        "baseLang": "And my life is mine."
+    },
+    {
+        "time": 999,
+        "targetLang": "“お互い違う道歩いてるんだから”",
+        "baseLang": "We are walking on separate paths."
+    },
+    {
+        "time": 1002,
+        "targetLang": "“それでいいじゃない”って",
+        "baseLang": "Leave it that way.\""
+    },
+    {
+        "time": 1005,
+        "targetLang": "でその彼今はどうしてんだい?",
+        "baseLang": "So... speaking of... How is he doing now?"
+    },
+    {
+        "time": 1022,
+        "targetLang": "迷惑かけたのは僕の方なのに何で?",
+        "baseLang": "I'm the one who bothered her. So why?"
+    },
+    {
+        "time": 1027,
+        "targetLang": "彼女も",
+        "baseLang": "She feels that she has said too much."
+    },
+    {
+        "time": 1036,
+        "targetLang": "こんばんは",
+        "baseLang": "Good evening."
+    },
+    {
+        "time": 1038,
+        "targetLang": "いらっしゃい",
+        "baseLang": "Welcome."
+    },
+    {
+        "time": 1050,
+        "targetLang": "あの...この度はあなたの気持ちも考えず",
+        "baseLang": "Well... I was ignorant and insensitive."
+    },
+    {
+        "time": 1054,
+        "targetLang": "軽率で身勝手な行動をしてしまい...",
+        "baseLang": "I am really sorry. I shouldn't have--"
+    },
+    {
+        "time": 1060,
+        "targetLang": "“俺たちがお前を守るだから逃げずに戦え”",
+        "baseLang": "\"We got your back. So... don't run. Just fight.\""
+    },
+    {
+        "time": 1069,
+        "targetLang": "晴美あたしが全部自分で説明するからいいわね?",
+        "baseLang": "I will tell him everything myself. You got that?"
+    },
+    {
+        "time": 1075,
+        "targetLang": "どうぞご自由に食べたらあたし帰るから",
+        "baseLang": "Whatever you want. I'm leaving after my meal."
+    },
+    {
+        "time": 1078,
+        "targetLang": "あらつきあい悪い女おせっかいおばさんやめたの",
+        "baseLang": "-You are so unsociable. -I stopped meddling in others' affairs."
+    },
+    {
+        "time": 1084,
+        "targetLang": "見覚えないかな?",
+        "baseLang": "Don't you recognize me?"
+    },
+    {
+        "time": 1101,
+        "targetLang": "ムササビ?",
+        "baseLang": "Flying Squirrel?"
+    },
+    {
+        "time": 1103,
+        "targetLang": "ムササビ!?",
+        "baseLang": "You're Flying Squirrel."
+    },
+    {
+        "time": 1106,
+        "targetLang": "あれ?あれ?ムササビ?",
+        "baseLang": "Really? Really?"
+    },
+    {
+        "time": 1109,
+        "targetLang": "(マスター)水飲むかい?",
+        "baseLang": "-Flying-- -Want some water?"
+    },
+    {
+        "time": 1120,
+        "targetLang": "ムササビ...",
+        "baseLang": "Flying Squirrel?"
+    },
+    {
+        "time": 1122,
+        "targetLang": "(ディレクター)じゃよろしくお願いしまーす",
+        "baseLang": "Get ready."
+    },
+    {
+        "time": 1124,
+        "targetLang": "生放送なんであの...お手柔らかに",
+        "baseLang": "We're live, so please watch your language."
+    },
+    {
+        "time": 1128,
+        "targetLang": "間もなくCM明けまーすSS",
+        "baseLang": "The commercial break will end soon."
+    },
+    {
+        "time": 1132,
+        "targetLang": "島ちゃんどーん!",
+        "baseLang": "Shima, go."
+    },
+    {
+        "time": 1135,
+        "targetLang": "今夜も始まりました「ミッドナイト島ちゃん」",
+        "baseLang": "This is \"Midnight Shima-chan.\""
+    },
+    {
+        "time": 1139,
+        "targetLang": "何と今日は特別ゲストをお招きしました",
+        "baseLang": "Believe it or not, I have a special guest tonight."
+    },
+    {
+        "time": 1143,
+        "targetLang": "というかこちらは気を遣ってご遠慮してたんですが...",
+        "baseLang": "Honestly, I didn't think that he would come."
+    },
+    {
+        "time": 1146,
+        "targetLang": "(コウちゃん)ご無沙汰~!",
+        "baseLang": "Long time no see."
+    },
+    {
+        "time": 1148,
+        "targetLang": "忍者戦隊コーガのリーダー漆黒のムササビよ",
+        "baseLang": "I'm Black Flying Squirrel from Super Ninja Squadron Koga."
+    },
+    {
+        "time": 1151,
+        "targetLang": "みんな覚えててくれてすっごくうれしい~!",
+        "baseLang": "I'm so happy to hear that everyone remembers me."
+    },
+    {
+        "time": 1162,
+        "targetLang": "今日はあたし一人しかいないけどいつものいくわよ~!",
+        "baseLang": "I'm the only one here today, but get ready for our usual callout."
+    },
+    {
+        "time": 1166,
+        "targetLang": "“五人の忍びがそろうとき誰にも知られず悪を断つ!”",
+        "baseLang": "\"When the five super ninjas unite, they kill evildoers, leaving no trace!"
+    },
+    {
+        "time": 1171,
+        "targetLang": "“五つの鐘が鳴ったとき悪の響きも聞き納め”",
+        "baseLang": "When five bells ring, time's up for the evildoers."
+    },
+    {
+        "time": 1176,
+        "targetLang": "“コーガはどこでもはせ参上”",
+        "baseLang": "Koga will go anywhere"
+    },
+    {
+        "time": 1178,
+        "targetLang": "〝善悪の彼岸!善悪の彼岸!〞",
+        "baseLang": "beyond good and evil!\""
+    },
+    {
+        "time": 1188,
+        "targetLang": "(島田)あっという間に時間が過ぎてしまいました",
+        "baseLang": "Can you believe today's show is almost over?"
+    },
+    {
+        "time": 1191,
+        "targetLang": "ムササビさんお別れの前に大切な友人にメッセージを送りたいとか",
+        "baseLang": "Flying Squirrel wants to send a message to his dear friend."
+    },
+    {
+        "time": 1203,
+        "targetLang": "(コウちゃん)公共の電波使って言っちゃうわ",
+        "baseLang": "I will send out a personal message through the radio."
+    },
+    {
+        "time": 1207,
+        "targetLang": "あたしは今の自分も昔の自分も大好き",
+        "baseLang": "I love who I am, as well as who I was."
+    },
+    {
+        "time": 1215,
+        "targetLang": "ひとに何言われようがあたしはあたし",
+        "baseLang": "No matter what others say about me, I don't care. This is who I am."
+    },
+    {
+        "time": 1220,
+        "targetLang": "昔よりちょっとずうずうしくなったかもしれないけど",
+        "baseLang": "I may have a thicker skin now than I had then..."
+    },
+    {
+        "time": 1227,
+        "targetLang": "でも...",
+        "baseLang": "That said..."
+    },
+    {
+        "time": 1230,
+        "targetLang": "気にかけてくれてありがとね",
+        "baseLang": "I appreciate the fact... that you care about me."
+    },
+    {
+        "time": 1237,
+        "targetLang": "ホントにありがと",
+        "baseLang": "I want to thank you sincerely."
+    },
+    {
+        "time": 1247,
+        "targetLang": "(島田)また来てくださいねムササビさん",
+        "baseLang": "Please come again, Flying Squirrel."
+    },
+    {
+        "time": 1250,
+        "targetLang": "それではまた来週おやすみなさい",
+        "baseLang": "Until next week. Good night, everyone."
+    },
+    {
+        "time": 1267,
+        "targetLang": "すいません気付かなくて",
+        "baseLang": "I'm sorry. I didn't see you."
+    },
+    {
+        "time": 1270,
+        "targetLang": "どちらまでご利用ですか?",
+        "baseLang": "Where are you going?"
+    },
+    {
+        "time": 1303,
+        "targetLang": "(マスター)はいお待ち",
+        "baseLang": "Here you go."
+    },
+    {
+        "time": 1307,
+        "targetLang": "6人目の忍び“純白の島ちゃん”です",
+        "baseLang": "I'm the sixth Super Ninja, White Shima-chan."
+    },
+    {
+        "time": 1311,
+        "targetLang": "僕のお薦めはやっぱり麺入りです",
+        "baseLang": "My favorite item is \"with noodles\" after all."
+    },
+    {
+        "time": 1314,
+        "targetLang": "新入りさんコソコソしない",
+        "baseLang": "Hey rookie, no whispering."
+    },
+    {
+        "time": 1316,
+        "targetLang": "かしこまり!",
+        "baseLang": "Yes, ma'am."
+    },
+    {
+        "time": 1318,
+        "targetLang": "それでは皆さん",
+        "baseLang": "Attention please, everyone."
+    },
+    {
+        "time": 1320,
+        "targetLang": "(一同)おやすみなさい!",
+        "baseLang": "Good night."
+    }
+]
