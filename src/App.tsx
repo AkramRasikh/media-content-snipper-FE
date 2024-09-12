@@ -23,13 +23,14 @@ function App() {
   const [hasVideoBeenUploaded, setHasVideoBeenUploaded] = useState(false);
 
   const handleWebMToServer = async () => {
-    if (!webmFileState || !hasVideoBeenUploaded) {
+    if (!webmFileState) {
       alert('Please select a file first.');
       return;
     }
 
     const formData = new FormData();
     formData.append('file', webmFileState);
+    formData.append('contentName', contentName);
 
     try {
       setIsLoading(true);
@@ -42,6 +43,8 @@ function App() {
           },
         },
       );
+      console.log('## handleWebMToServer', { response });
+
       if (response.status === 200) {
         setUploadMessage(
           `File uploaded successfully: ${response.data.filePath}`,
@@ -84,8 +87,7 @@ function App() {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        'http://localhost:3000/*',
-        // 'http://localhost:3000/video-to-audio',
+        'http://localhost:3000/video-to-audio',
         {
           contentName,
           trimStart: decrepenacyState,
@@ -108,8 +110,12 @@ function App() {
   const handleVideoFileChange = (event) => {
     const selectedFile = event.target.files[0];
     if (selectedFile && selectedFile.type === 'video/webm') {
-      setWebmFileState(selectedFile);
-      const url = URL.createObjectURL(selectedFile);
+      const customFileName = contentName + '.webm'; // Replace this with your desired filename
+      const fileWithCustomName = new File([selectedFile], customFileName, {
+        type: selectedFile.type,
+      });
+      setWebmFileState(fileWithCustomName);
+      const url = URL.createObjectURL(fileWithCustomName);
       setWebmFileUrlState(url);
     } else {
       alert('Please select a valid WebM file.');
@@ -216,11 +222,13 @@ function App() {
             type='file'
             accept='.webm'
             onChange={handleVideoFileChange}
+            disabled={!contentName}
           />
         </div>
       </div>
       <div>
-        <button disabled={!hasVideoBeenUploaded} onClick={handleWebMToServer}>
+        <button onClick={handleWebMToServer}>
+          {/* <button disabled={hasVideoBeenUploaded} onClick={handleWebMToServer}> */}
           webm to server
         </button>
       </div>
@@ -243,7 +251,10 @@ function App() {
       <button
         onClick={handleConvert}
         disabled={Boolean(
-          !contentName || !decrepenacyState || !lastAudioTimeStampState,
+          !contentName ||
+            !decrepenacyState ||
+            !lastAudioTimeStampState ||
+            !hasVideoBeenUploaded,
         )}
       >
         Trigger conversion
