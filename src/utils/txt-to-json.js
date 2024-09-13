@@ -40,8 +40,6 @@ export const txtToJSON = (txtData) => {
     });
   }
 
-  console.log('## ', subtitlesArray);
-
   return subtitlesArray;
 };
 // Convert the array to JSON string with indentation

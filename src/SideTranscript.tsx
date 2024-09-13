@@ -95,6 +95,7 @@ const SideTranscript = ({
   sceneStartState,
   setSceneStartState,
   sceneEndstate,
+  handleThisCutOfPointForTranscript,
 }) => {
   if (timeIsAligned) {
     return (
@@ -149,12 +150,20 @@ const SideTranscript = ({
                       Go to {subtitle.time}
                     </button>
                   )}
+                  <button
+                    onClick={() =>
+                      handleThisCutOfPointForTranscript(subtitle.id)
+                    }
+                  >
+                    Edit script to here
+                  </button>
                   {!timeIsAligned && firstSubtitle && (
                     <button onClick={() => handleDescrepancy(subtitle.time)}>
                       descprenacy
                     </button>
                   )}
-                  {!timeIsAligned && lastSubtitle && (
+
+                  {!timeIsAligned && (
                     <button
                       onClick={() =>
                         setLastAudioTimeStampState(currentTimeState)

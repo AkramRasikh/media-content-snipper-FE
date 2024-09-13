@@ -26,6 +26,25 @@ function App() {
   const [uploadMessage, setUploadMessage] = useState('');
   const [hasVideoBeenUploaded, setHasVideoBeenUploaded] = useState(false);
 
+  const handleThisCutOfPointForTranscript = (transcriptId) => {
+    const thisTranscriptIndex = transcriptDataState.findIndex(
+      (transcripData) => transcripData.id === transcriptId,
+    );
+    const updatedTranscriptDataState = transcriptDataState.filter(
+      (_, index) => index >= thisTranscriptIndex,
+    );
+    const newFirstEl = updatedTranscriptDataState[0].time;
+    const startTranscriptAudioFromZero = updatedTranscriptDataState.map(
+      (transcriptData) => {
+        return {
+          ...transcriptData,
+          time: transcriptData.time - newFirstEl,
+        };
+      },
+    );
+    setTranscriptDataState(startTranscriptAudioFromZero);
+  };
+
   const handleWebMToServer = async () => {
     if (!webmFileState) {
       alert('Please select a file first.');
@@ -83,6 +102,57 @@ function App() {
 
       // Read the file as text
       reader.readAsText(thisFile);
+    }
+  };
+
+  const resetNestedAudio = (arr) => {
+    const firstAudioStamp = arr[0].time;
+
+    return arr.map((transcriptItem) => {
+      return {
+        ...transcriptItem,
+        time: transcriptItem.time - firstAudioStamp,
+      };
+    });
+  };
+
+  const handleSendSnippetToFirebase = async () => {
+    if (!sceneStartState || !sceneEndstate) {
+      return;
+    }
+
+    const firstTrimIndex = transcriptDataState.findIndex(
+      (transcriptLine) => transcriptLine.id === sceneStartState,
+    );
+
+    const endTimeElIndex = transcriptDataState.findIndex(
+      (transcriptLine) => transcriptLine.id === sceneEndstate,
+    );
+
+    const isLastIndex = endTimeElIndex === transcriptDataState.length - 1;
+
+    if (isLastIndex) {
+      return;
+    }
+    // firebaseContentTitle, trimStart, trimEnd, transcript
+    try {
+      setIsLoading(true);
+      const response = await axios.post(
+        'http://localhost:4000/send-to-content',
+        {
+          firebaseContentTitle: contentName,
+          trimStart: transcriptDataState[firstTrimIndex].time,
+          trimEnd: transcriptDataState[endTimeElIndex + 1].time,
+          transcript: resetNestedAudio(
+            transcriptDataState.slice(firstTrimIndex, endTimeElIndex),
+          ),
+        },
+      );
+      setFileURL(response.data.file);
+    } catch (error) {
+      console.error('Error converting video to audio:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -245,6 +315,7 @@ function App() {
           sceneStartState={sceneStartState}
           setSceneStartState={setSceneStartState}
           sceneEndstate={sceneEndstate}
+          handleThisCutOfPointForTranscript={handleThisCutOfPointForTranscript}
         />
       ) : null}
       <div>
@@ -253,6 +324,14 @@ function App() {
           onClick={handleCreateSnippetFromVideo}
         >
           Create snippet from {sceneStartState} ➡️ {sceneEndstate}
+        </button>
+      </div>
+      <div>
+        <button
+          disabled={!Boolean(audioSnippetURLState)}
+          onClick={handleSendSnippetToFirebase}
+        >
+          Send to firebase! {audioSnippetURLState}
         </button>
       </div>
       <button

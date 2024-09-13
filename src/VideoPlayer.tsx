@@ -17,6 +17,7 @@ const VideoPlayer = ({
   setSceneStartState,
   sceneEndstate,
   timeIsAligned,
+  handleThisCutOfPointForTranscript,
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -164,6 +165,7 @@ const VideoPlayer = ({
           sceneStartState={sceneStartState}
           setSceneStartState={setSceneStartState}
           sceneEndstate={sceneEndstate}
+          handleThisCutOfPointForTranscript={handleThisCutOfPointForTranscript}
         />
       )}
     </div>
